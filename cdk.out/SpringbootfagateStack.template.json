@@ -1,0 +1,1675 @@
+{
+  "Resources": {
+    "myvpcD5605535": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/Resource"
+      }
+    },
+    "myvpcPublicSubnet1Subnet1B26F27D": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/18",
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "AvailabilityZone": "us-east-2a",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet1/Subnet"
+      }
+    },
+    "myvpcPublicSubnet1RouteTable9F63489B": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet1/RouteTable"
+      }
+    },
+    "myvpcPublicSubnet1RouteTableAssociation8FBB5AAF": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPublicSubnet1RouteTable9F63489B"
+        },
+        "SubnetId": {
+          "Ref": "myvpcPublicSubnet1Subnet1B26F27D"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet1/RouteTableAssociation"
+      }
+    },
+    "myvpcPublicSubnet1DefaultRoute02EDD9DC": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPublicSubnet1RouteTable9F63489B"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "myvpcIGWFD8011FA"
+        }
+      },
+      "DependsOn": [
+        "myvpcVPCGW1438EE4B"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet1/DefaultRoute"
+      }
+    },
+    "myvpcPublicSubnet1EIP40EA3614": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet1/EIP"
+      }
+    },
+    "myvpcPublicSubnet1NATGateway6FCA2992": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "SubnetId": {
+          "Ref": "myvpcPublicSubnet1Subnet1B26F27D"
+        },
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "myvpcPublicSubnet1EIP40EA3614",
+            "AllocationId"
+          ]
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet1/NATGateway"
+      }
+    },
+    "myvpcPublicSubnet2Subnet57F6F89F": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.64.0/18",
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "AvailabilityZone": "us-east-2b",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet2/Subnet"
+      }
+    },
+    "myvpcPublicSubnet2RouteTable30077428": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet2/RouteTable"
+      }
+    },
+    "myvpcPublicSubnet2RouteTableAssociation23751285": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPublicSubnet2RouteTable30077428"
+        },
+        "SubnetId": {
+          "Ref": "myvpcPublicSubnet2Subnet57F6F89F"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet2/RouteTableAssociation"
+      }
+    },
+    "myvpcPublicSubnet2DefaultRoute1334228D": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPublicSubnet2RouteTable30077428"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "myvpcIGWFD8011FA"
+        }
+      },
+      "DependsOn": [
+        "myvpcVPCGW1438EE4B"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet2/DefaultRoute"
+      }
+    },
+    "myvpcPublicSubnet2EIPE8813B6E": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet2/EIP"
+      }
+    },
+    "myvpcPublicSubnet2NATGatewayD7CFBD84": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "SubnetId": {
+          "Ref": "myvpcPublicSubnet2Subnet57F6F89F"
+        },
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "myvpcPublicSubnet2EIPE8813B6E",
+            "AllocationId"
+          ]
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PublicSubnet2/NATGateway"
+      }
+    },
+    "myvpcPrivateSubnet1Subnet9816A8A0": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.128.0/18",
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "AvailabilityZone": "us-east-2a",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PrivateSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet1/Subnet"
+      }
+    },
+    "myvpcPrivateSubnet1RouteTable162E52F4": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PrivateSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet1/RouteTable"
+      }
+    },
+    "myvpcPrivateSubnet1RouteTableAssociation10A82010": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPrivateSubnet1RouteTable162E52F4"
+        },
+        "SubnetId": {
+          "Ref": "myvpcPrivateSubnet1Subnet9816A8A0"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet1/RouteTableAssociation"
+      }
+    },
+    "myvpcPrivateSubnet1DefaultRouteDF70BFFA": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPrivateSubnet1RouteTable162E52F4"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "myvpcPublicSubnet1NATGateway6FCA2992"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet1/DefaultRoute"
+      }
+    },
+    "myvpcPrivateSubnet2Subnet5D553ACE": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.192.0/18",
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "AvailabilityZone": "us-east-2b",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PrivateSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet2/Subnet"
+      }
+    },
+    "myvpcPrivateSubnet2RouteTableF674A3C5": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc/PrivateSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet2/RouteTable"
+      }
+    },
+    "myvpcPrivateSubnet2RouteTableAssociation4D26094C": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPrivateSubnet2RouteTableF674A3C5"
+        },
+        "SubnetId": {
+          "Ref": "myvpcPrivateSubnet2Subnet5D553ACE"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet2/RouteTableAssociation"
+      }
+    },
+    "myvpcPrivateSubnet2DefaultRouteD917D920": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "myvpcPrivateSubnet2RouteTableF674A3C5"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "myvpcPublicSubnet2NATGatewayD7CFBD84"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/PrivateSubnet2/DefaultRoute"
+      }
+    },
+    "myvpcIGWFD8011FA": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "SpringbootfagateStack/my.vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/IGW"
+      }
+    },
+    "myvpcVPCGW1438EE4B": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        },
+        "InternetGatewayId": {
+          "Ref": "myvpcIGWFD8011FA"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/my.vpc/VPCGW"
+      }
+    },
+    "codetestseis0412825D": {
+      "Type": "AWS::ECR::Repository",
+      "Properties": {
+        "RepositoryName": "codetest-seis"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/codetest-seis/Resource"
+      }
+    },
+    "cicdcodepipelineRole12BB7FAE": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "codebuild.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd-codepipeline/Role/Resource"
+      }
+    },
+    "cicdcodepipelineRoleDefaultPolicyCF671008": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":logs:us-east-2:739517360361:log-group:/aws/codebuild/",
+                      {
+                        "Ref": "cicdcodepipelineA8F09696"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":logs:us-east-2:739517360361:log-group:/aws/codebuild/",
+                      {
+                        "Ref": "cicdcodepipelineA8F09696"
+                      },
+                      ":*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "codebuild:CreateReportGroup",
+                "codebuild:CreateReport",
+                "codebuild:UpdateReport",
+                "codebuild:BatchPutTestCases",
+                "codebuild:BatchPutCodeCoverages"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":codebuild:us-east-2:739517360361:report-group/",
+                    {
+                      "Ref": "cicdcodepipelineA8F09696"
+                    },
+                    "-*"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject*",
+                "s3:Abort*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "cicdpipelineArtifactsBucket7FA68DB1",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "cicdpipelineArtifactsBucket7FA68DB1",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": [
+                "kms:Decrypt",
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "cicdcodepipelineRoleDefaultPolicyCF671008",
+        "Roles": [
+          {
+            "Ref": "cicdcodepipelineRole12BB7FAE"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd-codepipeline/Role/DefaultPolicy/Resource"
+      }
+    },
+    "cicdcodepipelineA8F09696": {
+      "Type": "AWS::CodeBuild::Project",
+      "Properties": {
+        "Artifacts": {
+          "Type": "CODEPIPELINE"
+        },
+        "Environment": {
+          "ComputeType": "BUILD_GENERAL1_SMALL",
+          "EnvironmentVariables": [
+            {
+              "Name": "ECR_REPO",
+              "Type": "PLAINTEXT",
+              "Value": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::Select": [
+                        4,
+                        {
+                          "Fn::Split": [
+                            ":",
+                            {
+                              "Fn::GetAtt": [
+                                "codetestseis0412825D",
+                                "Arn"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    ".dkr.ecr.",
+                    {
+                      "Fn::Select": [
+                        3,
+                        {
+                          "Fn::Split": [
+                            ":",
+                            {
+                              "Fn::GetAtt": [
+                                "codetestseis0412825D",
+                                "Arn"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    ".",
+                    {
+                      "Ref": "AWS::URLSuffix"
+                    },
+                    "/",
+                    {
+                      "Ref": "codetestseis0412825D"
+                    }
+                  ]
+                ]
+              }
+            }
+          ],
+          "Image": "aws/codebuild/java:openjdk-8",
+          "ImagePullCredentialsType": "CODEBUILD",
+          "PrivilegedMode": true,
+          "Type": "LINUX_CONTAINER"
+        },
+        "ServiceRole": {
+          "Fn::GetAtt": [
+            "cicdcodepipelineRole12BB7FAE",
+            "Arn"
+          ]
+        },
+        "Source": {
+          "BuildSpec": {
+            "Fn::Join": [
+              "",
+              [
+                "{\n  \"version\": \"0.2\",\n  \"phases\": {\n    \"install\": {\n      \"commands\": [\n        \"#apt-get update -y\"\n      ],\n      \"finally\": [\n        \"echo Done installing deps\"\n      ]\n    },\n    \"pre_build\": {\n      \"commands\": [\n        \"echo Logging in to Amazon ECR...\",\n        \"$(aws ecr get-login --no-include-email)\",\n        \"COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)\",\n        \"IMAGE_TAG=${COMMIT_HASH:=latest}\"\n      ]\n    },\n    \"build\": {\n      \"commands\": [\n        \"cd springbooteclipse\",\n        \"echo Building Docker Image $ECR_REPO:latest\",\n        \"ls\",\n        \"docker build -f Dockerfile -t $ECR_REPO:latest .\",\n        \"echo Tagging Docker Image $ECR_REPO:latest with $ECR_REPO:$IMAGE_TAG\",\n        \"docker tag $ECR_REPO:latest $ECR_REPO:$IMAGE_TAG\",\n        \"echo Pushing Docker Image to $ECR_REPO:latest and $ECR_REPO:$IMAGE_TAG\",\n        \"docker push $ECR_REPO:latest\",\n        \"docker push $ECR_REPO:$IMAGE_TAG\"\n      ],\n      \"finally\": [\n        \"echo Done building code\"\n      ]\n    },\n    \"post_build\": {\n      \"commands\": [\n        \"echo creating imagedefinitions.json dynamically\",\n        \"printf '[{\\\"name\\\":\\\"codetest-seis\\\",\\\"imageUri\\\": \\\"",
+                {
+                  "Fn::Select": [
+                    4,
+                    {
+                      "Fn::Split": [
+                        ":",
+                        {
+                          "Fn::GetAtt": [
+                            "codetestseis0412825D",
+                            "Arn"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                ".dkr.ecr.",
+                {
+                  "Fn::Select": [
+                    3,
+                    {
+                      "Fn::Split": [
+                        ":",
+                        {
+                          "Fn::GetAtt": [
+                            "codetestseis0412825D",
+                            "Arn"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                ".",
+                {
+                  "Ref": "AWS::URLSuffix"
+                },
+                "/",
+                {
+                  "Ref": "codetestseis0412825D"
+                },
+                ":latest\\\"}]' > imagedefinitions.json\",\n        \"echo Build completed on `date`\"\n      ]\n    }\n  },\n  \"artifacts\": {\n    \"files\": [\n      \"imagedefinitions.json\"\n    ]\n  }\n}"
+              ]
+            ]
+          },
+          "Type": "CODEPIPELINE"
+        },
+        "Cache": {
+          "Modes": [
+            "LOCAL_DOCKER_LAYER_CACHE",
+            "LOCAL_CUSTOM_CACHE"
+          ],
+          "Type": "LOCAL"
+        },
+        "EncryptionKey": {
+          "Fn::GetAtt": [
+            "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+            "Arn"
+          ]
+        },
+        "Name": "cicd-codepipeline"
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd-codepipeline/Resource"
+      }
+    },
+    "myLbFargateServiceLBCB6CC115": {
+      "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
+      "Properties": {
+        "LoadBalancerAttributes": [
+          {
+            "Key": "deletion_protection.enabled",
+            "Value": "false"
+          }
+        ],
+        "Scheme": "internet-facing",
+        "SecurityGroups": [
+          {
+            "Fn::GetAtt": [
+              "myLbFargateServiceLBSecurityGroupE1424183",
+              "GroupId"
+            ]
+          }
+        ],
+        "Subnets": [
+          {
+            "Ref": "myvpcPublicSubnet1Subnet1B26F27D"
+          },
+          {
+            "Ref": "myvpcPublicSubnet2Subnet57F6F89F"
+          }
+        ],
+        "Type": "application"
+      },
+      "DependsOn": [
+        "myvpcPublicSubnet1DefaultRoute02EDD9DC",
+        "myvpcPublicSubnet2DefaultRoute1334228D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/LB/Resource"
+      }
+    },
+    "myLbFargateServiceLBSecurityGroupE1424183": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Automatically created Security Group for ELB SpringbootfagateStackmyLbFargateServiceLB4E9EC1FA",
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow from anyone on port 80",
+            "FromPort": 80,
+            "IpProtocol": "tcp",
+            "ToPort": 80
+          }
+        ],
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/LB/SecurityGroup/Resource"
+      }
+    },
+    "myLbFargateServiceLBSecurityGrouptoSpringbootfagateStackmyLbFargateServiceSecurityGroup205BCB0C8080E2C866C9": {
+      "Type": "AWS::EC2::SecurityGroupEgress",
+      "Properties": {
+        "GroupId": {
+          "Fn::GetAtt": [
+            "myLbFargateServiceLBSecurityGroupE1424183",
+            "GroupId"
+          ]
+        },
+        "IpProtocol": "tcp",
+        "Description": "Load balancer to target",
+        "DestinationSecurityGroupId": {
+          "Fn::GetAtt": [
+            "myLbFargateServiceSecurityGroupF3897A22",
+            "GroupId"
+          ]
+        },
+        "FromPort": 8080,
+        "ToPort": 8080
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/LB/SecurityGroup/to SpringbootfagateStackmyLbFargateServiceSecurityGroup205BCB0C:8080"
+      }
+    },
+    "myLbFargateServiceLBPublicListener1B45336D": {
+      "Type": "AWS::ElasticLoadBalancingV2::Listener",
+      "Properties": {
+        "DefaultActions": [
+          {
+            "TargetGroupArn": {
+              "Ref": "myLbFargateServiceLBPublicListenerECSGroupC910CD20"
+            },
+            "Type": "forward"
+          }
+        ],
+        "LoadBalancerArn": {
+          "Ref": "myLbFargateServiceLBCB6CC115"
+        },
+        "Port": 80,
+        "Protocol": "HTTP"
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/LB/PublicListener/Resource"
+      }
+    },
+    "myLbFargateServiceLBPublicListenerECSGroupC910CD20": {
+      "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
+      "Properties": {
+        "Port": 80,
+        "Protocol": "HTTP",
+        "TargetType": "ip",
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/LB/PublicListener/ECSGroup/Resource"
+      }
+    },
+    "myLbFargateServiceTaskDefTaskRoleE8AA8C01": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ecs-tasks.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/TaskDef/TaskRole/Resource"
+      }
+    },
+    "myLbFargateServiceTaskDef26A4C6CB": {
+      "Type": "AWS::ECS::TaskDefinition",
+      "Properties": {
+        "ContainerDefinitions": [
+          {
+            "Essential": true,
+            "Image": "okaycloud/dummywebserver:latest",
+            "LogConfiguration": {
+              "LogDriver": "awslogs",
+              "Options": {
+                "awslogs-group": {
+                  "Ref": "myLbFargateServiceTaskDefcodetestseisLogGroup3BF435BC"
+                },
+                "awslogs-stream-prefix": "myLbFargateService",
+                "awslogs-region": "us-east-2"
+              }
+            },
+            "Name": "codetest-seis",
+            "PortMappings": [
+              {
+                "ContainerPort": 8080,
+                "Protocol": "tcp"
+              }
+            ]
+          }
+        ],
+        "Cpu": "256",
+        "ExecutionRoleArn": {
+          "Fn::GetAtt": [
+            "myLbFargateServiceTaskDefExecutionRole2D505003",
+            "Arn"
+          ]
+        },
+        "Family": "SpringbootfagateStackmyLbFargateServiceTaskDef82BB820A",
+        "Memory": "512",
+        "NetworkMode": "awsvpc",
+        "RequiresCompatibilities": [
+          "FARGATE"
+        ],
+        "TaskRoleArn": {
+          "Fn::GetAtt": [
+            "myLbFargateServiceTaskDefTaskRoleE8AA8C01",
+            "Arn"
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/TaskDef/Resource"
+      }
+    },
+    "myLbFargateServiceTaskDefcodetestseisLogGroup3BF435BC": {
+      "Type": "AWS::Logs::LogGroup",
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/TaskDef/codetest-seis/LogGroup/Resource"
+      }
+    },
+    "myLbFargateServiceTaskDefExecutionRole2D505003": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ecs-tasks.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/TaskDef/ExecutionRole/Resource"
+      }
+    },
+    "myLbFargateServiceTaskDefExecutionRoleDefaultPolicyBE70479F": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "myLbFargateServiceTaskDefcodetestseisLogGroup3BF435BC",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "myLbFargateServiceTaskDefExecutionRoleDefaultPolicyBE70479F",
+        "Roles": [
+          {
+            "Ref": "myLbFargateServiceTaskDefExecutionRole2D505003"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/TaskDef/ExecutionRole/DefaultPolicy/Resource"
+      }
+    },
+    "myLbFargateServiceF1D4DA3E": {
+      "Type": "AWS::ECS::Service",
+      "Properties": {
+        "Cluster": {
+          "Ref": "EcsDefaultClusterMnL3mNNYNmyvpc3F0A2487"
+        },
+        "DeploymentConfiguration": {
+          "MaximumPercent": 200,
+          "MinimumHealthyPercent": 50
+        },
+        "EnableECSManagedTags": false,
+        "HealthCheckGracePeriodSeconds": 60,
+        "LaunchType": "FARGATE",
+        "LoadBalancers": [
+          {
+            "ContainerName": "codetest-seis",
+            "ContainerPort": 8080,
+            "TargetGroupArn": {
+              "Ref": "myLbFargateServiceLBPublicListenerECSGroupC910CD20"
+            }
+          }
+        ],
+        "NetworkConfiguration": {
+          "AwsvpcConfiguration": {
+            "AssignPublicIp": "ENABLED",
+            "SecurityGroups": [
+              {
+                "Fn::GetAtt": [
+                  "myLbFargateServiceSecurityGroupF3897A22",
+                  "GroupId"
+                ]
+              }
+            ],
+            "Subnets": [
+              {
+                "Ref": "myvpcPublicSubnet1Subnet1B26F27D"
+              },
+              {
+                "Ref": "myvpcPublicSubnet2Subnet57F6F89F"
+              }
+            ]
+          }
+        },
+        "TaskDefinition": {
+          "Ref": "myLbFargateServiceTaskDef26A4C6CB"
+        }
+      },
+      "DependsOn": [
+        "myLbFargateServiceLBPublicListenerECSGroupC910CD20",
+        "myLbFargateServiceLBPublicListener1B45336D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/Service/Service"
+      }
+    },
+    "myLbFargateServiceSecurityGroupF3897A22": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "SpringbootfagateStack/myLbFargateService/Service/SecurityGroup",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "VpcId": {
+          "Ref": "myvpcD5605535"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/Service/SecurityGroup/Resource"
+      }
+    },
+    "myLbFargateServiceSecurityGroupfromSpringbootfagateStackmyLbFargateServiceLBSecurityGroup006844058080F8DD4E3D": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "IpProtocol": "tcp",
+        "Description": "Load balancer to target",
+        "FromPort": 8080,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "myLbFargateServiceSecurityGroupF3897A22",
+            "GroupId"
+          ]
+        },
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "myLbFargateServiceLBSecurityGroupE1424183",
+            "GroupId"
+          ]
+        },
+        "ToPort": 8080
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/myLbFargateService/Service/SecurityGroup/from SpringbootfagateStackmyLbFargateServiceLBSecurityGroup00684405:8080"
+      }
+    },
+    "EcsDefaultClusterMnL3mNNYNmyvpc3F0A2487": {
+      "Type": "AWS::ECS::Cluster",
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/EcsDefaultClusterMnL3mNNYNmy.vpc/Resource"
+      }
+    },
+    "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A": {
+      "Type": "AWS::KMS::Key",
+      "Properties": {
+        "KeyPolicy": {
+          "Statement": [
+            {
+              "Action": "kms:*",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":iam::739517360361:root"
+                    ]
+                  ]
+                }
+              },
+              "Resource": "*"
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/ArtifactsBucketEncryptionKey/Resource"
+      }
+    },
+    "cicdpipelineArtifactsBucketEncryptionKeyAlias74B8410B": {
+      "Type": "AWS::KMS::Alias",
+      "Properties": {
+        "AliasName": "alias/codepipeline-springbootfagatestackcicdpipelineef400161",
+        "TargetKeyId": {
+          "Fn::GetAtt": [
+            "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+            "Arn"
+          ]
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/ArtifactsBucketEncryptionKeyAlias/Resource"
+      }
+    },
+    "cicdpipelineArtifactsBucket7FA68DB1": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "KMSMasterKeyID": {
+                  "Fn::GetAtt": [
+                    "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+                    "Arn"
+                  ]
+                },
+                "SSEAlgorithm": "aws:kms"
+              }
+            }
+          ]
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/ArtifactsBucket/Resource"
+      }
+    },
+    "cicdpipelineRole1F2253DD": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "codepipeline.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/Role/Resource"
+      }
+    },
+    "cicdpipelineRoleDefaultPolicyC3B7AEA1": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject*",
+                "s3:Abort*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "cicdpipelineArtifactsBucket7FA68DB1",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "cicdpipelineArtifactsBucket7FA68DB1",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "cicdpipelineBuildCodePipelineActionRole8480726E",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "cicdpipelineDeployEcsDeployActionCodePipelineActionRole68798266",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "cicdpipelineRoleDefaultPolicyC3B7AEA1",
+        "Roles": [
+          {
+            "Ref": "cicdpipelineRole1F2253DD"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/Role/DefaultPolicy/Resource"
+      }
+    },
+    "cicdpipeline7FF1D637": {
+      "Type": "AWS::CodePipeline::Pipeline",
+      "Properties": {
+        "RoleArn": {
+          "Fn::GetAtt": [
+            "cicdpipelineRole1F2253DD",
+            "Arn"
+          ]
+        },
+        "Stages": [
+          {
+            "Actions": [
+              {
+                "ActionTypeId": {
+                  "Category": "Source",
+                  "Owner": "ThirdParty",
+                  "Provider": "GitHub",
+                  "Version": "1"
+                },
+                "Configuration": {
+                  "Owner": "cgxinyi",
+                  "Repo": "CodeTest-Seis",
+                  "Branch": "main",
+                  "OAuthToken": "{{resolve:secretsmanager:github-oauth:SecretString:::}}",
+                  "PollForSourceChanges": true
+                },
+                "Name": "GitHub",
+                "OutputArtifacts": [
+                  {
+                    "Name": "Artifact_Source_GitHub"
+                  }
+                ],
+                "RunOrder": 1
+              }
+            ],
+            "Name": "Source"
+          },
+          {
+            "Actions": [
+              {
+                "ActionTypeId": {
+                  "Category": "Build",
+                  "Owner": "AWS",
+                  "Provider": "CodeBuild",
+                  "Version": "1"
+                },
+                "Configuration": {
+                  "ProjectName": {
+                    "Ref": "cicdcodepipelineA8F09696"
+                  }
+                },
+                "InputArtifacts": [
+                  {
+                    "Name": "Artifact_Source_GitHub"
+                  }
+                ],
+                "Name": "Build",
+                "OutputArtifacts": [
+                  {
+                    "Name": "Artifact_Build_Build"
+                  }
+                ],
+                "RoleArn": {
+                  "Fn::GetAtt": [
+                    "cicdpipelineBuildCodePipelineActionRole8480726E",
+                    "Arn"
+                  ]
+                },
+                "RunOrder": 1
+              }
+            ],
+            "Name": "Build"
+          },
+          {
+            "Actions": [
+              {
+                "ActionTypeId": {
+                  "Category": "Deploy",
+                  "Owner": "AWS",
+                  "Provider": "ECS",
+                  "Version": "1"
+                },
+                "Configuration": {
+                  "ClusterName": {
+                    "Ref": "EcsDefaultClusterMnL3mNNYNmyvpc3F0A2487"
+                  },
+                  "ServiceName": {
+                    "Fn::GetAtt": [
+                      "myLbFargateServiceF1D4DA3E",
+                      "Name"
+                    ]
+                  }
+                },
+                "InputArtifacts": [
+                  {
+                    "Name": "Artifact_Build_Build"
+                  }
+                ],
+                "Name": "EcsDeployAction",
+                "RoleArn": {
+                  "Fn::GetAtt": [
+                    "cicdpipelineDeployEcsDeployActionCodePipelineActionRole68798266",
+                    "Arn"
+                  ]
+                },
+                "RunOrder": 1
+              }
+            ],
+            "Name": "Deploy"
+          }
+        ],
+        "ArtifactStore": {
+          "EncryptionKey": {
+            "Id": {
+              "Fn::GetAtt": [
+                "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+                "Arn"
+              ]
+            },
+            "Type": "KMS"
+          },
+          "Location": {
+            "Ref": "cicdpipelineArtifactsBucket7FA68DB1"
+          },
+          "Type": "S3"
+        },
+        "Name": "cicd_pipeline"
+      },
+      "DependsOn": [
+        "cicdpipelineRoleDefaultPolicyC3B7AEA1",
+        "cicdpipelineRole1F2253DD"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/Resource"
+      }
+    },
+    "cicdpipelineBuildCodePipelineActionRole8480726E": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":iam::739517360361:root"
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/Build/Build/CodePipelineActionRole/Resource"
+      }
+    },
+    "cicdpipelineBuildCodePipelineActionRoleDefaultPolicy49DC5EDC": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "codebuild:BatchGetBuilds",
+                "codebuild:StartBuild",
+                "codebuild:StopBuild"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "cicdcodepipelineA8F09696",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "cicdpipelineBuildCodePipelineActionRoleDefaultPolicy49DC5EDC",
+        "Roles": [
+          {
+            "Ref": "cicdpipelineBuildCodePipelineActionRole8480726E"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/Build/Build/CodePipelineActionRole/DefaultPolicy/Resource"
+      }
+    },
+    "cicdpipelineDeployEcsDeployActionCodePipelineActionRole68798266": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":iam::739517360361:root"
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/Deploy/EcsDeployAction/CodePipelineActionRole/Resource"
+      }
+    },
+    "cicdpipelineDeployEcsDeployActionCodePipelineActionRoleDefaultPolicy04C505AC": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "ecs:DescribeServices",
+                "ecs:DescribeTaskDefinition",
+                "ecs:DescribeTasks",
+                "ecs:ListTasks",
+                "ecs:RegisterTaskDefinition",
+                "ecs:UpdateService"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "iam:PassRole",
+              "Condition": {
+                "StringEqualsIfExists": {
+                  "iam:PassedToService": [
+                    "ec2.amazonaws.com",
+                    "ecs-tasks.amazonaws.com"
+                  ]
+                }
+              },
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "cicdpipelineArtifactsBucket7FA68DB1",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "cicdpipelineArtifactsBucket7FA68DB1",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "cicdpipelineDeployEcsDeployActionCodePipelineActionRoleDefaultPolicy04C505AC",
+        "Roles": [
+          {
+            "Ref": "cicdpipelineDeployEcsDeployActionCodePipelineActionRole68798266"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/cicd_pipeline_/Deploy/EcsDeployAction/CodePipelineActionRole/DefaultPolicy/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAACn1SXW/bMAz8LX1X1Hkbhj0uzboiWLEZSdB3WWY9xopkSFSKwNB/nz7sOuuGPfF4okjqThWvqs/83c0X8eJWsu1vR2ks8HFPQvZsB854K4FtnvVPT4MntjHakfWSEjefB5aujyDf8/FpkOnoqd6w2jcK5d43GnL5gnbGExxEo2DhF27tnJEoCI1+LU7gflun8EPQgyB4ERdWWzxHuDTeagIb8VxQNpmyNcVX/TqBJrYH6S3S5cEaP+Qd/kvcdxac+4ve6swHBtLycQeDcUjGXoo2cxaYNC00HlXLxxoHUKihtuYIRcUJBobiFLuYIkqOtYkC5nYFpUluNQhKr3R8PQyRzUI9GtHeCSW0hPabsF1SBewZo3mghCOUKlY0uQJ1d45O/fu2TdP+yK/r0BHoqWbGV+eHODmKP2t4lebN+TitdhCu/wrPqHE2+S1jNIkok73i3jwrmzFB5eMueasJBqZMF+c9mu51mxkXP4bJiMWSLPOEA+tP8fp3yOKnsFYo8g/IIDD3gY93Xvbl3xUUQmA69uZHd3uuPvLqE69ujg5xZb0mPAHflfgb+kWNw3cDAAA="
+      },
+      "Metadata": {
+        "aws:cdk:path": "SpringbootfagateStack/CDKMetadata/Default"
+      }
+    }
+  },
+  "Outputs": {
+    "myLbFargateServiceLoadBalancerDNS98709A2F": {
+      "Value": {
+        "Fn::GetAtt": [
+          "myLbFargateServiceLBCB6CC115",
+          "DNSName"
+        ]
+      }
+    },
+    "myLbFargateServiceServiceURL24B3B910": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "http://",
+            {
+              "Fn::GetAtt": [
+                "myLbFargateServiceLBCB6CC115",
+                "DNSName"
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

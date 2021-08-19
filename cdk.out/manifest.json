@@ -1,0 +1,1690 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SpringbootfagateStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://739517360361/us-east-2",
+      "properties": {
+        "templateFile": "SpringbootfagateStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SpringbootfagateStack/my.vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcD5605535",
+            "trace": [
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:710:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet1Subnet1B26F27D",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PublicSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet1RouteTable9F63489B",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PublicSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet1RouteTableAssociation8FBB5AAF",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PublicSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet1DefaultRoute02EDD9DC",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1031:19)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:757:46)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet1EIP40EA3614",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1161:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet1NATGateway6FCA2992",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1159:17)",
+              "NatGatewayProvider.configureNat (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet2Subnet57F6F89F",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PublicSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet2RouteTable30077428",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PublicSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet2RouteTableAssociation23751285",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PublicSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet2DefaultRoute1334228D",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1031:19)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:757:46)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet2EIPE8813B6E",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1161:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPublicSubnet2NATGatewayD7CFBD84",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1159:17)",
+              "NatGatewayProvider.configureNat (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:108:27)",
+              "Vpc.createNatGateways (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet1Subnet9816A8A0",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PrivateSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet1RouteTable162E52F4",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PrivateSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet1RouteTableAssociation10A82010",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PrivateSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet1DefaultRouteDF70BFFA",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:125:12)",
+              "NatGatewayProvider.configureNat (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:118:12)",
+              "Vpc.createNatGateways (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet2Subnet5D553ACE",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PrivateSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet2RouteTableF674A3C5",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PrivateSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet2RouteTableAssociation4D26094C",
+            "trace": [
+              "new Subnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PrivateSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1185:5)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:859:12)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcPrivateSubnet2DefaultRouteD917D920",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:125:12)",
+              "NatGatewayProvider.configureNat (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:118:12)",
+              "Vpc.createNatGateways (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:834:14)",
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:764:14)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcIGWFD8011FA",
+            "trace": [
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:746:19)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/my.vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myvpcVPCGW1438EE4B",
+            "trace": [
+              "new Vpc (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:752:19)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:25:15)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/codetest-seis/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codetestseis0412825D",
+            "trace": [
+              "new Repository (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecr\\lib\\repository.ts:320:22)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:30:27)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd-codepipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdcodepipelineRole12BB7FAE",
+            "trace": [
+              "new Role (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Project (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codebuild\\lib\\project.ts:639:31)",
+              "new PipelineProject (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codebuild\\lib\\pipeline-project.ts:12:5)",
+              "PipelinetestStack.createPipelineProject (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:69:27)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:34:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd-codepipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdcodepipelineRoleDefaultPolicyCF671008",
+            "trace": [
+              "new Policy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "PipelineProject.addToRolePolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codebuild\\lib\\project.ts:168:17)",
+              "new Project (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codebuild\\lib\\project.ts:738:10)",
+              "new PipelineProject (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codebuild\\lib\\pipeline-project.ts:12:5)",
+              "PipelinetestStack.createPipelineProject (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:69:27)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:34:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd-codepipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdcodepipelineA8F09696",
+            "trace": [
+              "new Project (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codebuild\\lib\\project.ts:692:22)",
+              "new PipelineProject (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codebuild\\lib\\pipeline-project.ts:12:5)",
+              "PipelinetestStack.createPipelineProject (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:69:27)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:34:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceLBCB6CC115",
+            "trace": [
+              "new BaseLoadBalancer (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-load-balancer.ts:138:22)",
+              "new ApplicationLoadBalancer (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.ts:56:5)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:205:48)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceLBSecurityGroupE1424183",
+            "trace": [
+              "new SecurityGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:289:26)",
+              "new ApplicationLoadBalancer (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.ts:63:52)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:205:48)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/LB/SecurityGroup/to SpringbootfagateStackmyLbFargateServiceSecurityGroup205BCB0C:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceLBSecurityGrouptoSpringbootfagateStackmyLbFargateServiceSecurityGroup205BCB0C8080E2C866C9",
+            "trace": [
+              "SecurityGroup.addEgressRule (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:83:7)",
+              "SecurityGroup.addEgressRule (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:338:13)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:86:23",
+              "ReactiveList.forEachAndForever (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:85:45",
+              "ReactiveList.forEachAndForever (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "Connections.allowTo (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:84:26)",
+              "Connections.allowFrom (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:114:25)",
+              "ApplicationListener.registerConnectable (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:324:29)",
+              "ApplicationTargetGroup.registerConnectable (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:136:16)",
+              "Object.attachToApplicationTargetGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:401:21)",
+              "FargateService.attachToApplicationTargetGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:386:43)",
+              "ApplicationTargetGroup.addTarget (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:99:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:306:22)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:103:10)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceLBPublicListener1B45336D",
+            "trace": [
+              "new BaseListener (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-listener.ts:94:22)",
+              "new ApplicationListener (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:111:5)",
+              "ApplicationLoadBalancer.addListener (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.ts:77:22)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:221:34)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceLBPublicListenerECSGroupC910CD20",
+            "trace": [
+              "new TargetGroupBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-target-group.ts:129:21)",
+              "new ApplicationTargetGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:67:5)",
+              "ApplicationListener.addTargets (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:235:19)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:226:38)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceLoadBalancerDNS98709A2F",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:292:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceServiceURL24B3B910",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:293:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceTaskDefTaskRoleE8AA8C01",
+            "trace": [
+              "new Role (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new TaskDefinition (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:222:39)",
+              "new FargateTaskDefinition (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-task-definition.ts:62:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:54:29)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceTaskDef26A4C6CB",
+            "trace": [
+              "new TaskDefinition (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:230:21)",
+              "new FargateTaskDefinition (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-task-definition.ts:62:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:54:29)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/TaskDef/codetest-seis/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceTaskDefcodetestseisLogGroup3BF435BC",
+            "trace": [
+              "new LogGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.ts:237:22)",
+              "AwsLogDriver.bind (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.ts:58:44)",
+              "new ContainerDefinition (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.ts:216:44)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:360:12)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:69:45)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceTaskDefExecutionRole2D505003",
+            "trace": [
+              "new Role (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "FargateTaskDefinition.obtainExecutionRole (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:416:29)",
+              "AwsLogDriver.bind (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.ts:62:65)",
+              "new ContainerDefinition (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.ts:216:44)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:360:12)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:69:45)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceTaskDefExecutionRoleDefaultPolicyBE70479F",
+            "trace": [
+              "new Policy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Function.addToPrincipal (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:92:61)",
+              "LogGroup.grant (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.ts:99:22)",
+              "LogGroup.grantWrite (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.ts:94:17)",
+              "AwsLogDriver.bind (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.ts:62:19)",
+              "new ContainerDefinition (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.ts:216:44)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.ts:360:12)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:69:45)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceF1D4DA3E",
+            "trace": [
+              "new BaseService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:242:21)",
+              "new FargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-service.ts:79:5)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:85:20)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceSecurityGroupF3897A22",
+            "trace": [
+              "new SecurityGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:289:26)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:572:25)",
+              "new FargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-service.ts:98:10)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:85:20)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/myLbFargateService/Service/SecurityGroup/from SpringbootfagateStackmyLbFargateServiceLBSecurityGroup00684405:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myLbFargateServiceSecurityGroupfromSpringbootfagateStackmyLbFargateServiceLBSecurityGroup006844058080F8DD4E3D",
+            "trace": [
+              "SecurityGroup.addIngressRule (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:65:7)",
+              "SecurityGroup.addIngressRule (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:306:13)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:107:23",
+              "ReactiveList.forEachAndForever (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:106:45",
+              "ReactiveList.forEachAndForever (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:200:7)",
+              "Connections.allowFrom (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.ts:105:26)",
+              "ApplicationListener.registerConnectable (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.ts:324:29)",
+              "ApplicationTargetGroup.registerConnectable (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:136:16)",
+              "Object.attachToApplicationTargetGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:401:21)",
+              "FargateService.attachToApplicationTargetGroup (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.ts:386:43)",
+              "ApplicationTargetGroup.addTarget (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.ts:99:29)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:306:22)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:103:10)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/EcsDefaultClusterMnL3mNNYNmy.vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNmyvpc3F0A2487",
+            "trace": [
+              "new Cluster (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs\\lib\\cluster.ts:128:21)",
+              "ApplicationLoadBalancedFargateService.getDefaultCluster (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:301:70)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.ts:188:42)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.ts:44:5)",
+              "PipelinetestStack.createLoadBalancedFargateService (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:180:26)",
+              "PipelinetestStack.createEcsDeployAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:174:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:42:32)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineArtifactsBucketEncryptionKeyEF130E5A",
+            "trace": [
+              "new Key (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-kms\\lib\\key.ts:401:22)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:233:25)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineArtifactsBucketEncryptionKeyAlias74B8410B",
+            "trace": [
+              "new Alias (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-kms\\lib\\alias.ts:143:22)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:239:9)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineArtifactsBucket7FA68DB1",
+            "trace": [
+              "new Bucket (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:713:22)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:246:21)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineRole1F2253DD",
+            "trace": [
+              "new Role (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:257:31)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineRoleDefaultPolicyC3B7AEA1",
+            "trace": [
+              "new Policy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Function.addToPrincipal (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:92:61)",
+              "Function.addToPrincipalOrResource (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:48:26)",
+              "Bucket.grant (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:383:27)",
+              "Bucket.grantReadWrite (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:313:17)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:273:25)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipeline7FF1D637",
+            "trace": [
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:261:26)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/Build/Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineBuildCodePipelineActionRole8480726E",
+            "trace": [
+              "new Role (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "Pipeline.getRoleForAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:522:20)",
+              "Pipeline._attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:356:29)",
+              "Stage.attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:155:27)",
+              "Stage.addAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:93:29)",
+              "new Stage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:40:12)",
+              "Pipeline.addStage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:303:19)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:292:12)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/Build/Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineBuildCodePipelineActionRoleDefaultPolicy49DC5EDC",
+            "trace": [
+              "new Policy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Role.addToPolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:244:17)",
+              "CodeBuildAction.bound (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline-actions\\lib\\codebuild\\build-action.ts:90:18)",
+              "CodeBuildAction.bind (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\action.ts:234:17)",
+              "RichAction.bind (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:155:27)",
+              "Stage.addAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:93:29)",
+              "new Stage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:40:12)",
+              "Pipeline.addStage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:303:19)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:292:12)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/Deploy/EcsDeployAction/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineDeployEcsDeployActionCodePipelineActionRole68798266",
+            "trace": [
+              "new Role (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "Pipeline.getRoleForAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:522:20)",
+              "Pipeline._attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:356:29)",
+              "Stage.attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:155:27)",
+              "Stage.addAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:93:29)",
+              "new Stage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:40:12)",
+              "Pipeline.addStage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:303:19)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:292:12)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/cicd_pipeline_/Deploy/EcsDeployAction/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cicdpipelineDeployEcsDeployActionCodePipelineActionRoleDefaultPolicy04C505AC",
+            "trace": [
+              "new Policy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "Role.addToPolicy (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:244:17)",
+              "EcsDeployAction.bound (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline-actions\\lib\\ecs\\deploy-action.ts:55:18)",
+              "EcsDeployAction.bind (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\action.ts:234:17)",
+              "RichAction.bind (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:362:37)",
+              "Stage.attachActionToPipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:155:27)",
+              "Stage.addAction (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:93:29)",
+              "new Stage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\private\\stage.ts:40:12)",
+              "Pipeline.addStage (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:303:19)",
+              "new Pipeline (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\aws-codepipeline\\lib\\pipeline.ts:292:12)",
+              "new PipelinetestStack (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\lib\\pipelinetest.ts:44:20)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SpringbootfagateStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\bin\\springbootcdk.ts:25:5)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\cgxinyi\\Documents\\GitHub\\cdk-codeseis\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ]
+      },
+      "displayName": "SpringbootfagateStack"
+    }
+  }
+}
